@@ -1,5 +1,5 @@
 {
-  "name": "express_wwy",
+  "name": "ninghao-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,18 @@
     "start": "./node_modules/.bin/nodemon --exec babel-node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "wanghao <wanghao@ninghao.net>",
   "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0"
+  },
   "dependencies": {
-    "body-parser": "^1.17.1",
     "ejs": "^2.5.6",
     "express": "^5.0.0-alpha.5",
-    "morgan": "^1.8.1"
-  },
-  "devDependencies": {
-    "babel-preset-es2015": "^6.24.0"
+    "socket.io": "^1.0.0"
   }
 }

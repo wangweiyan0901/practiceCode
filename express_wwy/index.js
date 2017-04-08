@@ -36,17 +36,18 @@ app.get('/comments/new', (request, response) => {
 })
 
 app.get('/comments', (request, response) => {
+    //渲染一个comments/index这个视图
     response.render('comments/index')
 })
 
-app.post('/comment/new', (request, response) => {
-    if(!request.body.comments) {
+app.post('/comments/new', (request, response) => {
+    if(!request.body.comment) {
         response.status(400).send('Do you have something to say?')
         return
     }
     //
     comments.push({
-        comments:requset.body.comments,
+        comment:requset.body.comment,
         created_at: new Date()
     })
     response.redirect('/comments')
