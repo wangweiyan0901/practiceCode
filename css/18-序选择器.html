@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>后代选择器</title>
+    <title>序选择器</title>
     <style>
-        div ul li p{
+        .para:only-of-type{
             color: red;
         }
     </style>
 </head>
 <body>
-    
+    <p class="para">我是段落</p>
+    <div>
+        <p class="para">我是段落2</p>
+        <p class="para">我是段落2</p>
+        <h1>我是标题</h1>
+    </div>
 </body>
 </html>
